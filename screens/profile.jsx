@@ -12,6 +12,10 @@ export default function ProfileScreen({navigation}){
                 onPress={()=> navigation.navigate('Details',{mensagem: 'Olá do Perfil!'})}>
                      <Text style={styles.buttonText}> Ir para Detalhes</Text>
                      </TouchableOpacity>
+                     <TouchableOpacity style={styles.button}
+                onPress={()=> navigation.navigate('Scroll')}>
+                     <Text style={styles.buttonText}> Ir para Scroll</Text>
+                     </TouchableOpacity>
             </View>
     )
 }
